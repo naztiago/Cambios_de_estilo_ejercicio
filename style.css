@@ -1,0 +1,153 @@
+
+body{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif       ;
+    font-size: 2em;
+    background-image: url(/icons/steam.png);
+    background-size: 25vh;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+.section_1 {
+    height: 50vh;
+    width: 1/3vw;
+    display: block
+    
+}
+
+.recuadro {
+    background-color: rgb(255, 196, 19);
+    height: 50vh;
+    width: 1/3vw;
+    border: 5px solid black;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.boton_color{
+    display: inline-block;
+    padding: 20px 30px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: aliceblue;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    font-weight: 600; 
+    user-select: none;
+}
+
+
+.boton_color:hover {
+    background-color: #e0e0e0;
+  }
+
+  .boton_color:active {
+    background-color: #d0d0d0;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+#btnChangeColor #agregar_boton {
+    user-select: none;
+}
+
+#contenedor_botones{
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+
+
+.contenedor_imagen{
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.imagen_js{
+    height: 5em;
+    margin: 0.5em;
+
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+.rotating_izq {
+    animation: rotateAnimation_izq 1s linear infinite;
+  }
+
+@keyframes rotateAnimation_izq {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+  
+
+.rotating_der {
+    animation: rotateAnimation_der 1s linear infinite;
+  }
+
+@keyframes rotateAnimation_der {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+.recuadro_movimiento{
+    background-color: rgb(255, 196, 19);
+    height: 50vh;
+    border: 5px solid black;
+    box-sizing: border-box;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-content: space-around;
+    justify-items: center;
+    
+}
+
+
+.fin_juego{
+    background-image: url(https://thumbs.gfycat.com/AgilePeacefulAegeancat-max-1mb.gif);
+    background-size: cover;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
